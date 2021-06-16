@@ -30,7 +30,7 @@ Logar no meu terminal uma PESSOA
 Logar no meu terminal uma LISTA DE FRUTAS
     ## Declaro localmente uma nova variável
     ${outra_fruta}     Set Variable    uva
-    ## Declaro uma nova variável em escopo do teste
+    ## Declaro uma nova variável em escopo do teste usamos set test
     Set Test Variable  ${nova_fruta}   tangerina
     Log To Console     ${\n}
     Log To Console     ${FRUTAS}

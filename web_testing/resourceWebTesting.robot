@@ -21,6 +21,7 @@ Acessar a página home do site Automation Practice
 
 Digitar o nome do produto "${PRODUTO}" no campo de pesquisa
     Input Text    id=search_query_top    ${PRODUTO}
+
     
 Clicar no botão pesquisar
     Click Button    name=submit_search
@@ -40,4 +41,14 @@ Conferir se o produto "${PRODUTO}" foi adicionado no carrinho
 
 Conferir mensagem "No results were found for your search "itemNãoExistente""
     Wait Until Element Is Visible    xpath=//p[@class='alert alert-warning'][contains(.,'No results were found for your search "itemNãoExistente"')]
-  
+
+Passar o mouse por cima da categoria "Women" no menu principal superior de categorias 
+    Mouse Over       xpath=(//a[@class='product-name'][contains(.,'${PRODUTO}')])[2]
+    Click Element    xpath=(//a[@class='product-name'][contains(.,'${PRODUTO}')])[2]
+
+Clicar na sub categoria "${MENU}"
+    Mouse Over   id=block_top_menu    ${MENU}
+    Mouse Over       xpath=//*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a
+    Click Element    xpath=//*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a
+Conferir se os produtos da sub-categoria "Summer Dresses" foram mostrados na página
+    Wait Until Element Is Visible    xpath=//*[@id="center_column"]/h1/span[1][contains(.,'${MENU}')])[2]

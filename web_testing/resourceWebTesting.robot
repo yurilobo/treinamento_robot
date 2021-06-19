@@ -52,9 +52,11 @@ Clicar na sub categoria "${CATEGORIA}"
 Conferir se os produtos da sub-categoria "${SUBCATEGORIA}" foram mostrados na página
     Wait Until Element Is Visible    xpath=//span[@class='cat-name'][contains(.,'${SUBCATEGORIA}')]
 
-Clicar em "Sign in"
+Clicar em "${SIGING}"
+    Click Element       xpath=//a[@class='login'][contains(.,'${SIGING}')]
 
-Informar um E-mail "yuri@teste.com"
+
+Informar um E-mail "yuri2@teste.com"
 Clicar em "Create an account"
 Preencher os dados obrigatórios
 Submeter cadastro

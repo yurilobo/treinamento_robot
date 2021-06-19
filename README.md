@@ -1,5 +1,5 @@
 
-# Repositório para os códigos das aulas do Prime Experts !!!!
+# Repositório para os códigos das aulas do Prime Experts 
 
 Como instalar o roboit framework: pip install -U robotframework
 

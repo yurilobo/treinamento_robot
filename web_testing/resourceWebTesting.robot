@@ -48,6 +48,15 @@ Passar o mouse por cima da categoria "${CATEGORIA}" no menu principal superior d
 Clicar na sub categoria "${CATEGORIA}"
     Mouse Over       xpath=(//a[@title='Summer Dresses'])[1]
     Click Element    xpath=(//a[@title='Summer Dresses'])[1]
+
 Conferir se os produtos da sub-categoria "${SUBCATEGORIA}" foram mostrados na página
     Wait Until Element Is Visible    xpath=//span[@class='cat-name'][contains(.,'${SUBCATEGORIA}')]
+
+Clicar em "Sign in"
+
+Informar um E-mail "yuri@teste.com"
+Clicar em "Create an account"
+Preencher os dados obrigatórios
+Submeter cadastro
+Conferir se o cadastro foi efetuado com sucesso
     

@@ -25,7 +25,8 @@ Caso de Teste 03: Listar Produtos
 Caso de Teste 04: Adicionar Cliente
     Acessar a página home do site Automation Practice
     Clicar em "Sign in"
-    Informar um E-mail "yuri@teste.com"
+    Informar um E-mail "yuri3@teste.com"
+    #Mudar o email
     Clicar em "Create an account"
     Preencher os dados obrigatórios
     Submeter cadastro

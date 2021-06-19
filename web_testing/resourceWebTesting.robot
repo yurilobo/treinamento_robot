@@ -55,9 +55,11 @@ Conferir se os produtos da sub-categoria "${SUBCATEGORIA}" foram mostrados na p√
 Clicar em "${SIGING}"
     Click Element       xpath=//a[@class='login'][contains(.,'${SIGING}')]
 
-
-Informar um E-mail "yuri2@teste.com"
+Informar um E-mail "${EMAIL}"
+    Input Text    id=email_create    ${EMAIL}
+    
 Clicar em "Create an account"
+
 Preencher os dados obrigat√≥rios
 Submeter cadastro
 Conferir se o cadastro foi efetuado com sucesso

@@ -42,11 +42,11 @@ Conferir se o produto "${PRODUTO}" foi adicionado no carrinho
 Conferir mensagem "No results were found for your search "itemNãoExistente""
     Wait Until Element Is Visible    xpath=//p[@class='alert alert-warning'][contains(.,'No results were found for your search "itemNãoExistente"')]
 
-Passar o mouse por cima da categoria "Women" no menu principal superior de categorias 
-    Mouse Over       xpath=(//a[@class='product-name'][contains(.,'${PRODUTO}')])[2]
-    Click Element    xpath=(//a[@class='product-name'][contains(.,'${PRODUTO}')])[2]
+Passar o mouse por cima da categoria "${CATEGORIA}" no menu principal superior de categorias 
+    Mouse Over       xpath=//a[contains(@title,'Women')]  
+    Click Element    (//a[contains(@title,'Summer Dresses')])[1]
 
-Clicar na sub categoria "${MENU}"
+Clicar na sub categoria "${CATEGORIA}"
     Mouse Over   id=block_top_menu    ${MENU}
     Mouse Over       xpath=//*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a
     Click Element    xpath=//*[@id="block_top_menu"]/ul/li[1]/ul/li[2]/ul/li[3]/a
